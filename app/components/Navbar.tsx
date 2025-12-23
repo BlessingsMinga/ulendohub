@@ -15,6 +15,7 @@ export default function Navbar () {
             </Link>
 
             <div className="flex items-center space-x-4 gap-6 text-lg" >
+                <Link href={"/about"} className="text-slate-900 hover:text-green-500">About</Link>
                 <Link href={"/trips"} className="text-slate-900 hover:text-green-500">Trips</Link>
                 <Link href={"/region"} className="text-slate-900 hover:text-green-500">Region</Link>
 
