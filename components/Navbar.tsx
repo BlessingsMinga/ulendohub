@@ -1,6 +1,9 @@
+"use client"
+
 import { interClass,fontClass  } from "@/app/fonts";
 import Link from "next/link";
 import Image from "next/image";
+import { login } from "@/lib/auth-actions";
 
 export default function Navbar() {
     return (
@@ -21,7 +24,8 @@ export default function Navbar() {
                         Region
                     </Link>
 
-                    <button className="flex items-center justify-center gap-2 bg-green-700 hover:bg-green-500 text-white px-4 py-2 rounded-lg cursor-pointer">
+                    <button className="flex items-center justify-center gap-2 bg-green-700 hover:bg-green-500 text-white px-4 py-2 rounded-lg cursor-pointer" 
+                    onClick={login}>
                         Sign In
                         <svg
                             className="w-6 h-6"
