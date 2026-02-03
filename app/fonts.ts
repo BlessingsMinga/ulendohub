@@ -1,20 +1,15 @@
 import { Inter, Noto_Sans } from "next/font/google";
 
-export const InterSans = Inter({
-  variable: "--font-Inter-sans",
+export const inter = Inter({
   subsets: ["latin"],
-});
-
-export const NotoSans = Noto_Sans ({
-  variable: "--font-Noto-Sans-mono",
-  subsets: ["latin"],
-});
-
-export const fontClass = `${InterSans.variable} ${NotoSans.variable}`;
-
-const interInstance = Inter({
-  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
-export const interClass = interInstance.className;
+export const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  variable: "--font-noto-sans",
+  display: "swap",
+});
+
+export const fontVariables = `${inter.variable} ${notoSans.variable}`;
